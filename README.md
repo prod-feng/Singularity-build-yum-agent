@@ -54,6 +54,8 @@ func (c *YumConveyor) getRPMPath() (err error) {
         if err != nil {
                 return err
         }
+        // %{_var}/lib/rpm is the 'traditional' dbpath
+        if rpmDBPath != `/var/lib/rpm` {
 ```
 Then check the system rpm's macros
 
