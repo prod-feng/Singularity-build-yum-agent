@@ -33,6 +33,8 @@ INFO:    Starting build...
 FATAL:   While performing build: conveyor failed to get: while checking rpm path: macro is not defined
 ```
 
+
+
 Very confusing. Digged into it's source code: In file "internal/pkg/build/sources/conveyorPacker_yum.go",
 
 ```
@@ -69,7 +71,7 @@ Then check the system rpm's macros
 
 ```
 
-Obviously,  the '%{_db_backend}' is not defince. Not sure what it really is, add it to " ~/.rpmmacros".
+Obviously,  the '%{_db_backend}' is not defined. Not sure what it really is, add it to " ~/.rpmmacros".
 
 ```
 %_db_backend bdb
