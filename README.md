@@ -50,6 +50,10 @@ func (c *YumConveyor) getRPMPath() (err error) {
                 sylog.Warningf("Your host system is using the %s RPM database backend.", rpmDBBackend)
                 sylog.Warningf("Bootstrapping of older distributions that use the bdb backend will fail.")
         }
+        rpmDBPath, err := rpm.GetMacro("_dbpath")
+        if err != nil {
+                return err
+        }
 ```
 Then check the system rpm's macros
 
