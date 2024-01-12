@@ -1,6 +1,6 @@
 # Singularity-build-yum-agent
 
-Please check the bug report and fix at https://github.com/sylabs/singularity/issues/2237#issuecomment-1761318229
+## [ Please check the bug report and fix at https://github.com/sylabs/singularity/issues/2237#issuecomment-1761318229 
 
 singularity-ce version 4.0.0, yum, CentOS 7, 3.10.0-1160.76.1.el7.x86_64, RPM version 4.11.3
 
